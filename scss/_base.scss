@@ -1,0 +1,111 @@
+$bg-color:whitesmoke;
+$text-color:black;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: $bg-color;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    .nav__bar{
+        // position: fixed;
+        // width: 100%;
+        .logo{
+            a{
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+        display: flex;
+        // min-width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: orange;
+        .nav__items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul{
+                display: flex;
+                list-style-type: none;
+                justify-content: space-between;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $text-color;
+                        padding: 15px;
+                        text-align: center;
+                    }
+                }
+            }
+            button{
+                border: none;
+                background-color:$text-color ;
+                color: $bg-color;
+                padding: 7px;
+                border-radius: 10px;
+            }
+        }
+    }
+    #home{
+        display: flex;
+        background-color: $text-color;
+        justify-content: space-evenly;
+        align-items: center;
+        .home__left{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+            img{
+                width: 200px;
+                object-fit: contain;
+            }
+        }
+        .home__right{
+            width: 50%;
+            padding: 10px;
+            h2, p{
+                padding: 10px;
+                color: orange;
+                text-align: center;
+            }
+            span{
+                color: white;
+            }
+            .social__icons{
+                span{
+                    color: white;
+                }
+            }
+        }
+    }
+    #projects{
+        display: flex;
+        padding: 20px;
+        // background-color: orange;
+        justify-content: space-evenly;
+        column-gap: 10px;
+        .project__card{
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            justify-content: center;
+            align-items: center;
+            row-gap: 7px;
+            border-radius:10px ;
+            img{
+                width: 200px;
+            }
+            h3,p{
+                text-align: center;
+            }
+        }
+    }
+    .section-heading{
+        text-align: center;
+    }
+}
